@@ -64,7 +64,9 @@ Good things to install for developing on a Mac.
 For installing UNIX tools Apple doesn't include by default.
 [installation instructions](https://github.com/mxcl/homebrew/wiki/installation)
 
-> `/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"`
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
+```
 
 
 ## Configure Git ##
