@@ -1,6 +1,9 @@
-Mac OS X Dev Environment
-========================
+# Mac OS X Dev Environment #
 by Marc Leglise (mleglise@gmail.com)
+
+## Prerequisites ##
+
+Install XCode. It comes with git, which you need immediately, and a compiler, which you'll need for Ruby.
 
 Dot-file Installation
 =====================
@@ -19,7 +22,7 @@ cd dotfiles-public
 ruby install.rb
 ```
 
-3. Reload your Terminal (open a new window) to activate the changes
+3. Reload your Terminal (open a new window) to activate the changes.
 
 
 Ruby Installation
@@ -27,22 +30,26 @@ Ruby Installation
 
 1. Install the dotfiles as described above
 
-2. Install XCode from the Mac App Store
+2. Install [RVM](https://rvm.beginrescueend.com/)
 
-3. Install [RVM](https://rvm.beginrescueend.com/)  
-`bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)`
+```
+bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+```
 
-4. Reload your Terminal (open a new window)
+3. Reload your Terminal (open a new window)
 
-5. Test that RVM works  
+4. Test that RVM works  
 > `type rvm | head -1`  
 > Should output: "rvm is a function"  
 > `which rvm`  
 > Should output: "/Users/username/.rvm/bin/rvm"
 
-6. Install Ruby 1.9  
-> `rvm install 1.9.2`  
-> `rvm use 1.9.2`
+5. Install Ruby 1.9
+
+```
+rvm install 1.9.2  
+rvm use 1.9.2
+```
 
 Extra Tools
 ===========
@@ -57,17 +64,20 @@ For installing UNIX tools Apple doesn't include by default.
 > `/usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"`
 
 
-## Git ##
+## Configure Git ##
 
-1. Install git using Homebrew
-> `brew install git`
+1. [Generate your SSH keys](http://help.github.com/mac-set-up-git/)
 
-2. [Generate your SSH keys](http://help.github.com/mac-set-up-git/)
+2. Configure git for your specific account.
 
-3. Configure git for your specific account.
-> `git config --global user.name "Marc Leglise"`  
-> `git config --global user.email "mleglise@gmail.com"`
+```
+git config --global user.name "Marc Leglise"  
+git config --global user.email "mleglise@gmail.com"
+```
 
-4. If you have a GitHub account, set that configuration too.
-> `git config --global github.user mleglise`  
-> `git config --global github.token 01234my5678token`  
+3. If you have a GitHub account, set that configuration too.
+
+```
+git config --global github.user mleglise  
+git config --global github.token 01234my5678token
+```
