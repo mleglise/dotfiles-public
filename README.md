@@ -4,6 +4,7 @@ by Marc Leglise (mleglise@gmail.com)
 ## Prerequisites ##
 
 * Install XCode.
+* Use Terminal to run the commands below. (or iTerm or equivalent)
 
 # Dot-file Installation #
 
@@ -23,6 +24,8 @@ ruby install.rb
 
 * Reload your Terminal (open a new window) to activate the changes.
 
+* Now if you want to make changes, just edit the files in `~/Documents/dotfiles-public`
+
 
 Ruby Installation
 =================
@@ -39,10 +42,10 @@ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 * Test that RVM works  
 
-    `type rvm | head -1`  
-    Should output: "rvm is a function"  
-    `which rvm`  
-    Should output: "/Users/username/.rvm/bin/rvm"
+> `type rvm | head -1`  
+> Should output: "rvm is a function"  
+> `which rvm`  
+> Should output: "/Users/username/.rvm/bin/rvm"
 
 * Install Ruby 1.9
 
