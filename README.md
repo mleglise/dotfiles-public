@@ -14,8 +14,10 @@ git clone git://github.com/mleglise/dotfiles-public.git
 
 2. Run the install script to create symlinks in your home folder, that point to these files.
 
-> `cd dotfiles-public`  
-> `ruby install.rb`
+```
+cd dotfiles-public  
+ruby install.rb
+```
 
 3. Reload your Terminal (open a new window) to activate the changes
 
@@ -28,7 +30,7 @@ Ruby Installation
 2. Install XCode from the Mac App Store
 
 3. Install [RVM](https://rvm.beginrescueend.com/)  
-> `bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)`
+`bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)`
 
 4. Reload your Terminal (open a new window)
 
