@@ -51,7 +51,7 @@ bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
 
 ```
 rvm install 1.9.2  
-rvm use 1.9.2
+rvm use 1.9.2 --default
 ```
 
 Extra Tools
